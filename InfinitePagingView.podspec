@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/emichaud/InfinitePagingView.git", :tag => "0.0.2"}
   s.platform     = :ios
 
-  s.source_files = '*'
+  s.source_files = 'Classes'
   s.documentation = {}
   s.requires_arc = true
 end
