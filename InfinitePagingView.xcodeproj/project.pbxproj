@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6A0912B17DCFE2A00FF1AA0 /* InfinitePagingView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A6A0912A17DCFE2A00FF1AA0 /* InfinitePagingView.podspec */; };
 		B729685115B6473300686B64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B729682F15B6473300686B64 /* AppDelegate.m */; };
 		B729685315B6473300686B64 /* HPaddingPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B729683315B6473300686B64 /* HPaddingPageViewController.m */; };
 		B729685415B6473300686B64 /* HPagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B729683515B6473300686B64 /* HPagingViewController.m */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A6A0912A17DCFE2A00FF1AA0 /* InfinitePagingView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InfinitePagingView.podspec; sourceTree = "<group>"; };
 		B729682E15B6473300686B64 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B729682F15B6473300686B64 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B729683115B6473300686B64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		B7C454841578D025003FC537 = {
 			isa = PBXGroup;
 			children = (
+				A6A0912A17DCFE2A00FF1AA0 /* InfinitePagingView.podspec */,
 				B7E7E188158F89C000F5BE10 /* Classes */,
 				B729682D15B6473300686B64 /* InfinitePagingViewExamples */,
 				B7C454921578D025003FC537 /* Frameworks */,
@@ -240,6 +243,7 @@
 				B729685B15B6473300686B64 /* 15.JPG in Resources */,
 				B729685C15B6473300686B64 /* 2.JPG in Resources */,
 				B729685D15B6473300686B64 /* 3.JPG in Resources */,
+				A6A0912B17DCFE2A00FF1AA0 /* InfinitePagingView.podspec in Resources */,
 				B729685E15B6473300686B64 /* 4.JPG in Resources */,
 				B729685F15B6473300686B64 /* 5.JPG in Resources */,
 				B729686015B6473300686B64 /* 6.JPG in Resources */,
