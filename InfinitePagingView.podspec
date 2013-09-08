@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "EvInfinitePagingView"
+  s.name         = "InfinitePagingView"
   s.version      = "0.0.2"
   s.summary      = "InfinitePagingView is a subclass of UIView. It contains an endlessly scrollable UIScrollView."
 
