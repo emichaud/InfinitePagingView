@@ -92,8 +92,7 @@
     [newArray replaceObjectAtIndex:newOffsetIndex withObject:pageView];
     
     _pageViews = newArray;
-    
-    [_pageViews addObject:pageView];
+
     [self layoutPages];
 }
 
