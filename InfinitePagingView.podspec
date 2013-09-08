@@ -1,17 +1,15 @@
 Pod::Spec.new do |s|
-  s.name         = "InfinitePagingView"
+  s.name         = "EvInfinitePagingView"
   s.version      = "0.0.2"
   s.summary      = "InfinitePagingView is a subclass of UIView. It contains an endlessly scrollable UIScrollView."
-  s.description  = <<-DESC
-                    InfinitePagingView is a subclass of UIView. It contains an endlessly scrollable UIScrollView.on't worry about the indent, we strip it!
-                   DESC
+
   s.homepage     = "https://github.com/emichaud/InfinitePagingView"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "SHIGETA Takuji" => "shigeta@qnote.co.jp" }
   s.source       = { :git => "https://github.com/emichaud/InfinitePagingView.git", :tag => "0.0.2"}
   s.platform     = :ios
 
-  s.source_files = 'Classes', 'Classes/**/*.{h,m}'
-
+  s.source_files = '*'
+  s.documentation = {}
   s.requires_arc = true
 end
