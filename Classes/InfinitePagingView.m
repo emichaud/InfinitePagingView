@@ -60,7 +60,10 @@
     }
     return nil;
 }
-
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    [self layoutPages];
+}
 #pragma mark - Public methods
 
 - (void)addPageView:(UIView *)pageView
@@ -68,6 +71,28 @@
     if (nil == _pageViews) {
         _pageViews = [NSMutableArray array];
     }
+    
+    NSMutableArray *newArray = [NSMutableArray array];
+    for (int i = 0; i < [_pageViews count] + 1; i++) {
+        [newArray addObject:[NSNull null]];
+    }
+    
+    NSInteger newOffet = floor((_pageViews.count + 1) / 2);
+    NSLog(@"New offset: %d", newOffet);
+    
+    for (int i = 0; i < [_pageViews count]; i++) {
+        UIView *objecToInsert = [_pageViews objectAtIndex:(i + _lastPageIndex) % [_pageViews count]];
+        NSInteger indexToInsert = (i + newOffet ) % ([_pageViews count] + 1);
+        
+        [newArray replaceObjectAtIndex:indexToInsert withObject:objecToInsert];
+    }
+    
+    NSInteger newOffsetIndex = ([_pageViews count] + newOffet ) % ([_pageViews count] + 1);
+    
+    [newArray replaceObjectAtIndex:newOffsetIndex withObject:pageView];
+    
+    _pageViews = newArray;
+    
     [_pageViews addObject:pageView];
     [self layoutPages];
 }
